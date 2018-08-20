@@ -27,7 +27,7 @@
             <div class="jumbotron jumbotron-fluid" id="home">
                 <div class="container">
                     <img class="img-fluid" src="resources/images/profile_pic.jpg" alt="photo of tom">
-                    <h1 class="display-4">Hi, I'm Tom.</h1>
+                    <h1 class="display-4">Hi, I'm Tom.</span></h1>
                     <p class="lead">I'm passionate about solving problems and creating beautiful, functional solutions. </p>
                     <p class="lead">My tools are HTML, CSS and JavaScript.</p>
                 </div>
@@ -44,14 +44,14 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#about">What I Do
+                        <a class="nav-link" href="#about">About
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
                             aria-expanded="false">
-                            What I've Done
+                            Portfolio
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="#">Off The Rales Brewing Co.</a>
@@ -83,31 +83,57 @@
         <div class="container" id="about">
             <div class="row">
                 <div class="about">
-                    <h1 data-aos="fade-down" data-aos-duration="2000">What I Do</h1>
-                    <p class="lead">Front-End Web Developer, writer of clean, elegant code that functions how it should and looks great.</p>
-                    <p>Early in 2018, I realized that my true passion is working with computers, and having dabbled in code here and there (but never with any formal training), I decided I would finally work to master the concepts of web development.  I now work extensively with HTML5, CSS3, and JavaScript, as well as Bootstrap and jQuery to implement solutions that solve whatever problems I encounter.  Thank you for visiting, and please get in touch if you'd like to talk more.</p>
+                    <h1 data-aos="fade-right" data-aos-duration="2000">About</h1>
+                    <p class="lead" data-aos="fade-up" data-aos-duration="2000">I'm <span class="name-color">Tom.</span> I'm a Front-End Web Developer, writer of clean, elegant code that functions how it should and looks great.</p>
+                    <p data-aos="fade-up" data-aos-duration="2000">Early in 2018, I realized that my true passion is working with computers, and having dabbled in code here and there (but
+                            never with any formal training), I decided I would finally work to master the concepts of web development. I now work
+                            extensively with
+                            <span class="name-color">HTML5, CSS3,</span> and
+                            <span class="name-color">JavaScript</span>, as well as
+                            <span class="name-color">Bootstrap 4</span> and
+                            <span class="name-color">jQuery</span> to implement solutions that solve whatever problems I encounter. Thanks for visiting, and please get
+                            in touch if you'd like to talk more.</p> 
+
                 </div>
             </div>
         </div>
 
         <!--Projects Section-->
+        <h1 class="portfolio-header" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="1000">Portfolio</h1>
         <div class="container">
-            <div class="row">
-                <div class="about">
-                    <h1 data-aos="fade-down" data-aos-duration="2000">What I Do</h1>
-                    <img data-aos="fade-up" data-aos-duration="2000" class="img-fluid" src="resources/images/profile_pic.jpg" alt="photo of tom">
-                    <h2>Hi, I'm
-                        <span class="name-color">Tom.</span>
-                    </h2>
-                    <p class="lead">Front-End Web Developer, writer of clean, elegant code that functions how it should and looks great.</p>
-                    <p>Early in 2018, I realized that my true passion is working with computers, and having dabbled in code here and
-                        there (but never with any formal training), I decided I would finally work to master the concepts of web
-                        development. I now work extensively with HTML5, CSS3, and JavaScript, as well as Bootstrap and jQuery to
-                        implement solutions that solve whatever problems I encounter. Thank you for visiting, and please get in touch
-                        if you'd like to talk more.</p>
+            <div class="row portfolio">
+                    <div class="col-s">
+                        <div class="card">
+                            <img class="card-img-top" src="resources/images/offtherales.png" alt="Off the Rales screenshot">
+                            <div class="card-body">
+                                <h5 class="card-title">Off the Rales Homebrewery</h5>
+                                <p class="card-text">In addition to web development, I am an avid homebrewer.  I built my own website to showcase my homebrewed beers.</p>
+                                <a href="https://github.com/halcyondays22/offtherales" target="_blank" class="btn btn-primary">See the code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-s">
+                        <div class="card" >
+                            <img class="card-img-top" src="resources/images/travelist.png" alt="Travelist screenshot">
+                            <div class="card-body">
+                                <h5 class="card-title">Off the Rales Homebrewery</h5>
+                                <p class="card-text">In addition to web development, I am an avid homebrewer.  I built my own website to showcase my homebrewed beers.</p>
+                                <a href="https://github.com/halcyondays22/travelist" target="_blank" class="btn btn-primary">See the code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-s">
+                        <div class="card">
+                            <img class="card-img-top" src="resources/images/offtherales.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Off the Rales Homebrewery</h5>
+                                <p class="card-text">In addition to web development, I am an avid homebrewer.  I built my own website to showcase my homebrewed beers.</p>
+                                <a href="https://github.com/halcyondays22/offtherales" target="_blank" class="btn btn-primary">See the code</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
 
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
             crossorigin="anonymous"></script>

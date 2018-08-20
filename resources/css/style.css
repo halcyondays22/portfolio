@@ -31,6 +31,8 @@ button {
     }
 }
 
+
+
 /*Navbar Styles*/
 .navbar-brand {
     font-weight: 600;
@@ -49,7 +51,6 @@ button {
 }
 
 .jumbotron img {
-    margin-top: -2rem;
     border-radius: 50%;
     width: 300px;
     animation: 3s 0s 1 fadeIn;
@@ -76,4 +77,14 @@ button {
     border-radius: 50%;
     width: 300px;
     margin-bottom: 2rem;
+}
+
+/*Portfolio Styles*/
+.portfolio {
+    display: flex;
+    text-align: center;
+}
+
+.portfolio-header {
+    text-align: center;
 }
