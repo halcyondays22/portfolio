@@ -34,7 +34,7 @@
             </div>
 
         <!--Navigation Bar-->
-        <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light" id="nav">
             <a class="navbar-brand" href="#home">tom<span class="name-color">raley</span></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                 aria-expanded="false" aria-label="Toggle navigation">
@@ -54,15 +54,15 @@
                             Portfolio
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Off The Rales Brewing Co.</a>
+                            <a class="dropdown-item" href="#offtherales">Off The Rales Brewing Co.</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Travelist</a>
+                            <a class="dropdown-item" href="#travelist">Travelist</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Colmar Academy</a>
+                            <a class="dropdown-item" href="#colmar">Colmar Academy</a>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav">
@@ -102,7 +102,7 @@
         <div class="portfolio">
             <h1 class="portfolio-header" data-aos="fade" data-aos-duration="1000" >Portfolio</h1>
             <div class="container">
-                <div class="row justify-content-center">
+                <div class="row justify-content-center" id="offtherales">
                         <div class="col-sm-8">
                             <div class="card">
                                 <img class="card-img-top" data-aos="fade-right" data-aos-duration="2000" src="resources/images/offtherales.png" alt="Off the Rales screenshot">
@@ -114,7 +114,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row justify-content-center">
+                    <div class="row justify-content-center" id="travelist">
                         <div class="col-sm-8">
                             <div class="card" >
                                 <img class="card-img-top" data-aos="fade-right" data-aos-duration="2000" src="resources/images/travelist.png" alt="Travelist screenshot">
@@ -126,7 +126,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row justify-content-center">
+                    <div class="row justify-content-center" id="colmar">
                         <div class="col-sm-8">
                             <div class="card">
                                 <img class="card-img-top" data-aos="fade-right" data-aos-duration="2000" src="resources/images/colmaracademy.png" alt="Colmar academy screenshot">
@@ -149,6 +149,7 @@
             </div>
                 <p>tom raley &copy 2018</p>
         </footer>
+
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
             crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
@@ -160,12 +161,9 @@
         <script src="//cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
 
         <script>
-            AOS.init();
+            AOS.init(); 
+            $("html, body").animate({ scrollTop: "1024px" }, 5000);
         </script>
-        <script>
-            $(document).ready(function () {
-                    $(nav).localScroll();
-                });
-        </script>
+
     </body>
 </html>
