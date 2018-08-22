@@ -163,6 +163,9 @@
         <script>
             AOS.init(); 
             $("html, body").animate({ scrollTop: "1024px" }, 5000);
+            $('.nav-link').on('click', function () {
+                    $('.navbar-collapse').collapse('hide');
+                });
         </script>
 
     </body>
