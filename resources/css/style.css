@@ -1,4 +1,8 @@
 /*Universal Styles*/
+html {
+    scroll-behavior: smooth;
+}
+
 body, html {
     font-size: 16px;
     font-family: Montserrat, sans-serif;
@@ -49,31 +53,8 @@ button {
     border: none;
 }
 
-.navbar-toggle span.icon-bar {
-    transition: all 0.15s;
-}
-
-.navbar-toggle span:nth-child(2) {
-    transform: rotate(45deg);
-    transform-origin: 10% 10%;
-}
-
-.navbar-toggle span:nth-child(3) {
-    opacity: 0;
-}
-
-.navbar-toggle span:nth-child(4) {
-    transform: rotate(-45deg);
-    transform-origin: 10% 90%;
-}
-
-.navbar-toggle.collapsed span:nth-child(2),
-.navbar-toggle.collapsed span:nth-child(4) {
-    transform: rotate(0);
-}
-
-.navbar-toggle.collapsed span:nth-child(3) {
-    opacity: 1;
+#mobile-nav-button {
+    transition: all 10s ease;
 }
 
 /*Jumbotron Styles*/
@@ -165,18 +146,23 @@ footer p {
     color: rgb(3, 3, 3);
 }
 
+.anchor-padding {
+    padding-top: 100px;
+}
+
 #about {
-    padding-top: 50px;
+    padding-top: -50px;
 }
 
-#offtherales {
-    padding-top: 100px;
-}
 
-#beerist {
-    padding-top: 100px;
-}
+@media only screen and (max-width: 992px) {
 
-#colmar {
-    padding-top: 100px;
+    #about {
+    padding-top: -50px;
+    }
+
+    .anchor-padding {
+        padding-top: 100px;
+    }
+
 }
