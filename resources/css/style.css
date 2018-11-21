@@ -157,12 +157,9 @@ footer p {
 
 @media only screen and (max-width: 992px) {
 
-    #about {
-    padding-top: -50px;
-    }
-
     .anchor-padding {
-        padding-top: 100px;
+        padding-top: 300px;
+        margin-top: -300px;
     }
 
 }
