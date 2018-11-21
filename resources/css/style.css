@@ -160,4 +160,9 @@ footer p {
         padding-top: 525px;
         margin-top: -525px;
     }
+
+    #about {
+        padding-top: 300px;
+        margin-top: -300px;
+    }
 }
