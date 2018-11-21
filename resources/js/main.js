@@ -3,7 +3,7 @@ console.log("Connected!");
 AOS.init();
 
 //Makes X change to hamburger on click of link inside of nav menu
-$(".nav-link").click(function() {
+$(".nav-link:not(#navbarDropdown)").click(function() {
     if (!$(".nav-link").hasClass("dropdown-toggle") && !$("#mobile-nav-button").hasClass("show")) {
         $("#mobile-nav-button").removeClass("fa-bars").addClass("fa-times");
     } else {
