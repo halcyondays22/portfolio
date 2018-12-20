@@ -4,16 +4,16 @@ AOS.init();
 
 //Makes X change to hamburger on click of link inside of nav menu
 $(".nav-link:not(#navbarDropdown)").click(function() {
-    if (!$(".nav-link").hasClass("dropdown-toggle") && !$("#mobile-nav-button").hasClass("show")) {
+    if ($("#mobile-nav-button").hasClass("fa-bars")) {
         $("#mobile-nav-button").removeClass("fa-bars").addClass("fa-times");
-    } else {
+    } else  {
         $("#mobile-nav-button").removeClass("fa-times").addClass("fa-bars");
     }
 })
 
 //Makes hamburger change to X on click of hamburger button and back on click
 $("#mobile-nav-button").click(function() {
-    if (!$("#navbarSupportedContent").hasClass("show")) {
+    if ($("#mobile-nav-button").hasClass("fa-bars")) {
         $("#mobile-nav-button").removeClass("fa-bars").addClass("fa-times");
     } else  {
         $("#mobile-nav-button").removeClass("fa-times").addClass("fa-bars");
