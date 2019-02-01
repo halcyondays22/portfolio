@@ -113,6 +113,10 @@ button {
     background-color: rgba(255, 255, 255, 0);
 }
 
+.card-title {
+    font-weight: 600;
+}
+
 .btn-name-color {
     background-color: #045AA2;
 }
