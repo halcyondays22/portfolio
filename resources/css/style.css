@@ -53,6 +53,10 @@ button {
     border: none;
 }
 
+.dropdown-item {
+    margin-left: 1rem;
+}
+
 #mobile-nav-button {
     transition: all 10s ease;
 }
