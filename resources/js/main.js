@@ -7,6 +7,12 @@ $(".nav-link:not(#navbarDropdown)").click(function() {
     $("#mobile-nav-button").toggleClass("is-active");
 })
 
+//If Collapses navbar when clicking on tomraley when mobile navbar is shown
+$("#home-button").click(function () {
+    $("#mobile-nav-button").toggleClass("is-active");
+    $("#navbarSupportedContent").collapse("hide");
+})
+
 //Makes hamburger change to X on click of hamburger button and back on click
 $("#mobile-nav-button").click(function() {
     $("#mobile-nav-button").toggleClass("is-active");
